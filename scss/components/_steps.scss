@@ -1,0 +1,123 @@
+.steps {
+    position: relative;
+
+    @media (min-width: $m1024) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: calc(48px / 2);
+        top: 25px;
+        width: 1px;
+        height: 80%;
+        background-color: $neutral-600;
+
+        @media (min-width: $m1024) {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        @include column-item;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: $m1024) {
+            width: 100%;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            align-items: flex-start;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 64px;
+                top: 24px;
+                width: 100%;
+                height: 1px;
+                background-color: $neutral-600;
+            }
+        }
+    }
+
+    &__number {
+        width: 48px;
+        height: 48px;
+        display: block;
+        box-shadow: 0 0 0px 8px white;
+        margin-right: 16px;
+
+        @media (min-width: $m1024) {
+            box-shadow: 0 0 0px 16px white;
+            margin-right: 0px;
+        }
+    }
+
+    &__text-wrapper {
+        margin-left: 16px;
+        width: 100%;
+
+        @media (min-width: $m1024) {}
+
+        margin-left: 0;
+
+        p {
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 24px;
+
+            @media (min-width: $m1024) {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__title {
+        font-family: $ff-1;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+
+        @media (min-width: $m1024) {
+            font-size: 17px;
+            line-height: 24px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__number-wrapper {
+
+        @media (min-width: $m1024) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__btn {
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        line-height: 24px;
+        padding: 14px 40px;
+        margin-top: 24px;
+
+        @media only screen and (min-width: $m1024) {
+            width: fit-content;
+        }
+    }
+}

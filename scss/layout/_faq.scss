@@ -1,0 +1,7 @@
+.faq {
+  margin-top: 52px;
+
+  @media (min-width: $m1024) {
+    margin-top: 64px;
+  }
+}

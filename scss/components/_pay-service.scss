@@ -1,0 +1,48 @@
+.pay-service {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    &__qrcode {
+        width: 120px;
+        height: 120px;
+    }
+    &-desktop {
+        display: none;
+
+        @media (min-width: $m1024) {
+            display: flex;
+            margin-top: 16px;
+        }
+    }
+
+    &-mobile {
+        display: flex;
+        margin-top: 12px;
+
+        @media (min-width: $m1024) {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+    }
+
+    img {
+        max-width: 135px;
+        height: 40px;
+
+        @media (min-width: $m360) {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+}

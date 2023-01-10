@@ -1,0 +1,32 @@
+.steps-section {
+    margin-top: 52px;
+
+    &__title {
+        font-family: $ff-1;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 24px;
+
+        @media only screen and (min-width: $m1024) {
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 32px;
+
+        }
+    }
+
+    &__paragraph {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 12px 0 24px 0;
+
+        @media (min-width: $m1024) {
+            font-size: 17px;
+            line-height: 24px;
+            margin: 16px 0 32px 0;
+            max-width: 732px;
+        }
+
+    }
+}

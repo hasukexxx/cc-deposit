@@ -1,0 +1,40 @@
+.diskleimer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+
+    @media (min-width:$m1024) {
+        margin-top: 64px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        color: #626C77;
+        margin-bottom: 8px;
+        text-align: justify;
+
+        @media only screen and (min-width: $m1024) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.diskleimer-block {
+    display: none;
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        color: #626C77;
+        margin-top: 12px;
+        &:before {
+            margin-top: 0px;
+        }
+
+        @media only screen and (min-width: $m1024) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
